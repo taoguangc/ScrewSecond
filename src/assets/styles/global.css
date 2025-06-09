@@ -1,11 +1,13 @@
 @import 'tailwindcss';
 @import 'preline/variants.css';
+@import "@fontsource-variable/inter" layer(base);
 @plugin '@tailwindcss/forms';
 
 @custom-variant dark (&:is(.dark *));
 
 @theme {
   /* https://tailwindcss.com/docs/colors#customizing-your-colors */
+  --font-sans: 'Inter Variable', 'ui-sans-serif', sans-serif;
   --color-*: initial;
   --color-transparent: transparent;
   --color-current: currentColor;
